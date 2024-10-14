@@ -1,0 +1,168 @@
+/* utility classes */
+.text-shadow{
+  text-shadow: -7px -4px 5px;
+}
+/* navigation section */
+#logo {
+  width: 150px;
+}
+#nav-item .nav-link{
+font-size: x-large;
+font-weight: 600;
+color:white;
+}
+#nav-item .nav-link:hover{
+color: rgb(255, 67, 20);
+}
+.navbar{
+  z-index: 2;
+}
+/* badge on cart of navbar */
+#numofcart{
+  display: none;
+
+}
+
+
+/* slider section */
+
+
+.item img{
+  height: 90vh !important;
+  margin-right: 0px !important;
+  }
+.cont{
+ color:cornsilk;
+ 
+}
+  
+.cont:hover{
+  color: rgb(54, 25, 134) !important;
+}
+#owl-slider1 .owl-nav .owl-next{
+  position: absolute;
+  top: 48%;
+  right:10px;
+  opacity: 1;
+  z-index: 1;
+  font-size: 40px !important;
+  color: white !important;
+}
+#owl-slider1 .owl-nav .owl-next:hover{
+  color: rgba(18, 231, 18, 0.87) !important;
+  transition: 0.3s;
+}
+#owl-slider1 .owl-nav .owl-prev{
+  position: absolute;
+  top:48%;
+  left: 10px;
+  opacity: 1;
+  z-index: 1;
+  font-size: 40px !important;
+  color: white !important;
+}
+#owl-slider1 .owl-nav .owl-prev:hover{
+  color: rgba(18, 231, 18, 0.87) !important;
+  transition: 0.3s;
+}
+/* product section  */
+.product-list{
+  background-color: lightgoldenrodyellow;
+}
+.product-list h1{
+  color: darkolivegreen;
+}
+.card img{
+ 
+  height: 15rem;
+}
+.card p{
+  font-size: 18px;
+}
+.card:hover{
+
+ box-shadow: 0 20px 15px rgba(33,33,33,.5); 
+
+}
+
+
+/* work done by us  */
+#owl-slider2 .card-body a {
+  text-decoration: none;
+}
+/* testimonials section */
+#testimonial .row img{
+  width: 120px;
+}
+#testimonial .row .col-md-3{
+  background-color: blanchedalmond;
+  border-radius: 18px;
+}
+#testimonial .row .col-md-3:hover{
+  box-shadow: 0 20px 15px rgba(33,33,33,.5); 
+  cursor: pointer;
+}
+/* contact section */
+#contact-row{
+  background-image: url('../images/slide1.jpg');
+  background-size:cover;
+
+}
+/* footer section */
+#footer-row img{
+ width: 250px;
+}
+
+
+
+/*------------------------- login section ----------------------- */
+.login {
+  display: none;/* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+ 
+  padding-top: 60px;
+}
+#login-container{
+  border-radius: 10px !important;
+  position:absolute;
+  width:68% !important;
+  left: 15%;
+  top: 12% !important;
+  background-color: lightgoldenrodyellow !important;
+}
+
+/*-------- product page------------ */
+#indoor-plant h1{
+color:rgb(44, 116, 41);
+}
+#outdoor-plant h1{
+  color:rgb(30, 117, 197);
+}
+#flowers h1{
+  color:rgb(228, 71, 51);
+}
+#seasonal-flower h1{
+  color:rgb(134, 16, 170);
+}
+
+/* -------------- payment page ------------- */
+#cardpay{
+  display: none;
+}
+#upipay{
+  display: none;
+}
+#cashpay{
+  display: none;
+}
+
+
+
+
+  

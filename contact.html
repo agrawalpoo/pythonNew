@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Plant Corner/About</title>
+
+    <!-- bootstarp css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- bootstarp icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+    />
+    <!-- owl carousel css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- font awesome icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css jo mene linki h -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- page links -->
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="product.html" />
+    <link rel="stylesheet" href="contact.html" />
+    <link rel="stylesheet" href="cart.html" />
+    <link rel="stylesheet" href="sign-up.html">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav
+      class="
+        navbar navbar-expand-lg navbar-light
+        bg-success
+        position-sticky
+        top-0
+      "
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html"
+          ><i class="fas fa-leaf fa-3x mx-3"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end mx-5"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav" id="nav-item">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- dropdown  list for product link -->
+              <div class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+              
+                <ul class="dropdown-menu bg-success" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item nav-link" href="product.html">Product</a></li>
+                  <li><a class="dropdown-item nav-link" href="product.html#indoor-plant">Indoor Palnt</a></li>
+                  <li><a class="dropdown-item nav-link" href="product.html#outdoor-plant">Outdoor Plant</a></li>
+                
+                 
+                  <li><a class="dropdown-item nav-link" href="product.html#flowers">Flower</a></li>
+                  <li><a class="dropdown-item nav-link" href="product.html#seasonal-flower">Seasonal Flower</a></li>
+                </ul>
+              </div>
+
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="position-relative bi bi-cart-fill">
+                  <span
+                  class="
+                    position-absolute
+                    top-0
+                    start-100
+                    translate-middle
+                    badge
+                    rounded-pill
+                    bg-danger
+                  "
+                  id="contact-cart"
+                  >0
+                </span>
+                </i>
+                </a>
+            </li>
+          </ul>
+          <!--sign up page button -->
+          <button type="button" class="btn btn-secondary mx-2"><a href="sign-up.html" class="text-white text-decoration-none">Sign up</a></button>
+
+          <!-- Log In page button -->
+          <button
+            class="btn btn-secondary"
+            onclick="document.getElementById('login').style.display='block'"
+            style="width: auto"
+          >
+            Login
+          </button>
+          <!-- login page form -->
+          <div id="login" class="login">
+            <form method="post" action="mailto:lalitkumar9710888@gmail.com">
+              <div class="container py-2" id="login-container">
+                <h1 class="text-center mb-1">Login</h1>
+                <div class="col text-center">
+                  <i class="bi bi-person-circle fa-6x"></i>
+                </div>
+                <div class="row mb-2">
+                  <label for="inputEmail3" class="col-form-label">Username/Email</label>
+                  <div class="col">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail3"
+                      placeholder="Enter username/Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <label for="inputPassword3" class="col-form-label"
+                    >Password</label
+                  >
+                  <div class="col">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword3"
+                      placeholder="Enter password"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row mb-2">
+                  <div class="col">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="gridCheck1"
+                      />
+                      <label class="form-check-label" for="gridCheck1">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  <a href="about-us.html" class="text-white text-decoration-none"
+                    >Log in</a
+                  >
+                </button>
+
+                <button
+                  class="btn btn-danger my-2 mx-4"
+                  onclick="document.getElementById('login').style.display='none'"
+                >
+                  Cancel
+                </button>
+
+                <div class="col-9">
+                  <span>Forget <a href="#">Password?</a></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   <!-- contact page -->
+   <div class="container">
+   <h1 class="text-center  text-success ">Contact Us</h1>
+   <hr class="bg-success pb-2">
+
+   <div class="row" id="sitemap">
+   <iframe class="mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.359283470069!2d77.24102081440542!3d28.558972094158648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b5a63d9d69%3A0x2318e552fef1bc19!2sSapna%20Nursery!5e0!3m2!1sen!2sin!4v1638516919621!5m2!1sen!2sin" width="100%" height="500rem" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+  <div class="row bg-dark mb-2 justify-content-center">
+      <div class="col text-success text-center">
+        <i class="bi bi-geo-alt-fill fa-5x"></i>
+        <h3 class="mb-3" >Address:</h3>
+        <p>East of kailash,<br>New Delhi-110096 <br>India</p>
+      </div>
+      <div class="col text-success text-center">
+        <i class="bi bi-envelope-fill fa-5x"></i>
+        <h3 class="mb-3" >Email Us:</h3>
+        <a href="mailto:lalitkumar9710888@gmail.com" class="text-decoration-none"><i class="bi bi-envelope-fill"></i> Theplantcorner@gmail.com</a>
+        <br>
+        <a href="mailto:shubhamsharma7120@gmail.com" class="text-decoration-none"><i class="bi bi-envelope-fill"></i> Theplantcornersupport@gmail.com</a>
+      </div>
+      <div class="col text-success text-center mb-5">
+        <i class="bi bi-telephone-fill fa-5x"></i>
+        <h3 class="mb-3" >Call Us:</h3>
+        <a href="tel:+91-9069883922" class="text-decoration-none"><i class="bi bi-telephone-fill"></i>+919838438334</a> <br>
+        <a href="tel:+91-8700863422" class="text-decoration-none"><i class="bi bi-telephone-fill"></i>+919838438332</a>
+      </div>
+  </div> 
+</div>
+
+    <!-- footer section -->
+    <div class="container-fluid bg-dark pt-5">
+      <div class="row justify-content-center" id="footer-row">
+        <img class="d-flex" src="images/four-fox.png" alt="" />
+        <div class="col d-flex">
+          <ul class="list-unstyled">
+            <h5 class="text-white">Categories</h5>
+            <li>
+              <a href="product.html#indoor-plant" class="text-decoration-none text-success"
+                >Indoor palnt</a
+              >
+            </li>
+            <li>
+              <a href="product.html#outdoor-plant" class="text-decoration-none text-success"
+                >Outdoor plant</a
+              >
+            </li>
+           
+           
+            <li>
+              <a href="product.html#flowers" class="text-decoration-none text-success">Flower</a>
+            </li>
+            <li>
+              <a href="product.html#seasonal-flower" class="text-decoration-none text-success"
+                >Seasonal Flower</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col d-flex">
+          <ul class="list-unstyled">
+            <h5 class="text-white">Information</h5>
+            <li>
+              <a href="contact.html" class="text-decoration-none text-success"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-decoration-none text-success"
+                >Terms and Conditions</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-decoration-none text-success"
+                >Privacy Policy</a
+              >
+            </li>
+
+            <li>
+              <a href="about-us.html" class="text-decoration-none text-success"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="contact.html#sitemap" class="text-decoration-none text-success">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col d-flex">
+          <ul class="list-unstyled text-unstyled">
+            <h5 class="text-white">Follow Us</h5>
+            <li>
+              <a href=""><i class="bi bi-facebook text-primary fa-2x"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-instagram text-danger fa-2x"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-twitter text-primary fa-2x"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-github text-white fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row d-flex text-center text-white">
+        <h5>ThePlantCorner.com</h5>
+        <address>
+          Warehouse No. 2A, Al Asayel Street, Road No. 318, Al Quoz Industrial
+          Area 2 New Delhi-110096, Delhi, India <br />
+          Email : Theplantcorner@gmail.com <a href="mailto:lalitkumar9710888@gmail.com" class="btn btn-success mx-2 mt-2">Send Mail</a>
+        </address>
+
+        <a href="tel:+91-9069883922" class="btn btn-success">Call us</a>
+      </div>
+
+      <div class="row text-center text-white">
+        <p class="powered-by">© 2021 ThePlantCorner.com</p>
+      </div>
+    </div>
+
+    <!-- script tags  -->
+    <!-- jquery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+<!-- script for render total number of item in cart logo -->
+    <script>
+    let cart = JSON.parse(localStorage.getItem("data"));
+    let numitem = document.getElementById("contact-cart");
+    let total =0;
+    cart.forEach((item) => {
+         total +=item.numberofunits;
+       });
+       numitem.innerHTML=total;
+       if(total==0){
+        numitem.style.display="none";
+      }
+      else{
+        numitem.style.display="block";  
+      }
+    </script>
+        <!-- custom script jo mene likhi h  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
